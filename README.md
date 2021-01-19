@@ -23,9 +23,14 @@ The image gets updated and rebuilt every week automatically.
 - Add a user account to your server (other than `root`)
 - [Disable ssh password login to your server](https://www.cyberciti.biz/faq/how-to-disable-ssh-password-login-on-linux/)
 
-## Openslides installation
+## Installation
 
-### Run the container with podman or docker
+- First login to your server and clone (download) the git repository with `git clone https://gitlab.com/Maxkolbe/openslides.git`
+- Then change directory into the newly created folder with `cd openslides`
+
+### Installation with docker or podman
+
+#### Run the openslides container
 
 ```bash
 docker run -d --name openslides \
@@ -37,7 +42,7 @@ docker run -d --name openslides \
   openslides
 ```
 
-## Reverse proxy installation
+#### Run the nginx reverse proxy container
 
 ```bash
 docker run -d --name nginx \
