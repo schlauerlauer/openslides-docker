@@ -9,7 +9,7 @@ buildah:
     - podman version
     - buildah version
     - podman login -u $CI_USER -p $CI_TOKEN $CI_REGISTRY
-    - podman build -t $CI_REGISTRY/$CI_IMAGE:$DATE -t $CI_REGISTRY/$CI_IMAGE:latest .
-    - podman push $CI_IMAGE:$DATE
+    - podman build -t $CI_REGISTRY/$CI_IMAGE:$CI_DATE -t $CI_REGISTRY/$CI_IMAGE:latest .
+    - podman push $CI_IMAGE:$CI_DATE
     - podman push $CI_IMAGE:latest
     - podman logout $CI_REGISTRY
