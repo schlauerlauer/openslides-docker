@@ -1,4 +1,4 @@
-image: "quay.io/buildah/stable:latest"
+image: "buildah/buildah"
 
 buildah:
   only:
