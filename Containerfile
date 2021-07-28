@@ -1,6 +1,6 @@
 FROM docker.io/library/python:3.9.1-slim-buster
 
-RUN mkdir /openslides && apt update && apt upgrade && apt install -y gcc
+RUN apt install -y gcc
 WORKDIR /openslides
 RUN pip3 install openslides
 
